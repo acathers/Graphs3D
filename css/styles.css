@@ -1,0 +1,48 @@
+.main-container {
+    min-height: 80vh;
+    min-width: 100vw;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-vertical-center {
+    align-items: center;
+}
+
+.flex-horizontal-center {
+    justify-content: center;
+}
+
+.sticky-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.sticky-footer {
+    margin-top: auto;
+}
+
+.line {
+    fill: none;
+    stroke: green;
+    stroke-width: 5px;
+}
+
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: brown;
+}
+
+.label {
+    fill: black;
+    font: 10px sans-serif;
+}
+
+
+

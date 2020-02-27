@@ -5,6 +5,7 @@
 
 .site {
     display: flex;
+    background-color: whitesmoke;
     flex-direction: column;
     min-height: 100vh;
 }
@@ -37,11 +38,11 @@
 
 .bar {
     fill: steelblue;
+    opacity: 1.0;
 }
 
 .bar:hover {
-    fill: brown;
-
+    opacity: 0.5;
 }
 
 .label {

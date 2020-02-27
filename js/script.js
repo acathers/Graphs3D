@@ -21,7 +21,7 @@ function refreshGraph() {
     }
 
     // build window
-    const margin = {top: 10, right: 30, bottom: 30, left: 40},
+    const margin = {top: 10, right: 30, bottom: 80, left: 80},
         width = def_width - margin.left - margin.right,
         height = 710 - margin.top - margin.bottom;
     const x = d3.scaleBand()
@@ -73,8 +73,23 @@ function refreshGraph() {
             .attr("dy", ".15em")
             .attr("transform", "rotate(-65)");
 
+        svg.append('text')
+            .attr('x', width/2)
+            .attr('y', height + 50)
+            .attr('text-anchor', 'middle')
+            .text('Year')
+        ;
+
         // add the y Axis
         svg.append("g")
             .call(d3.axisLeft(y));
+
+        svg.append('text')
+            .attr('x', -(height / 2) - margin.top)
+            .attr('y', -40)
+            .attr('transform', 'rotate(-90)')
+            .attr('text-anchor', 'middle')
+            .text('Population (Millions)')
+
     });
 }
